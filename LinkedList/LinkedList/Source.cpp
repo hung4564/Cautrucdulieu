@@ -21,7 +21,7 @@ void main_linkedlist()
 void main_D_linkedlist()
 {
 	D_LinkedList list;
-	for (size_t i = 0; i < 3; i++)
+	for (size_t i = 0; i < 4; i++)
 	{
 		list.AddLast(i);
 	}
@@ -30,6 +30,18 @@ void main_D_linkedlist()
 	list.AddFirst(4);
 	list.AddLast(-1);
 	list.Show();
+	cout << "\n";
+	list.DeleteFirst();
+	list.DeleteLast();
+	list.Show();
+	cout << "\n";
+	list.AddAffter(2, 12);
+	list.Show();
+	cout << "\n";
+	list.AddBefore(2, 11);
+	list.Show();
+	cout << "\n";
+
 }
 int main()
 {

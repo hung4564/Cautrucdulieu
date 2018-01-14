@@ -36,21 +36,10 @@ Node * Node::getPrevious()
 {
 	return left;
 }
-void Node::setNext(int value)
-{
-	Node *p = new Node(value);
-	right = p;
-}
 
 void Node::setNext(Node * next)
 {
 	this->right = next;
-}
-
-void Node::setPrevious(int value)
-{
-	Node *p = new Node(value);
-	left = p;
 }
 
 void Node::setPrevious(Node * next)

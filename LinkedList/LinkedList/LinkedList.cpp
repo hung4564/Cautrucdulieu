@@ -8,7 +8,7 @@ LinkedList::LinkedList()
 }
 void LinkedList::Add(int value)
 {
-	Node *temp = new Node(value);
+	Node* temp = new Node(value);
 	if (first == NULL)
 	{
 		first = temp;
@@ -21,7 +21,7 @@ void LinkedList::Add(int value)
 		{
 			p = p->getNext();
 		}
-		p->setNext(value);
+		p->setNext(temp);
 	}
 }
 void LinkedList::AddBefore(int value_node, int value_them)
@@ -30,6 +30,7 @@ void LinkedList::AddBefore(int value_node, int value_them)
 	Node* q;
 	p = first;
 	q = p;
+	Node* temp = new Node(value_them);
 	if (first != NULL)
 	{
 		while (p != NULL)
@@ -38,7 +39,7 @@ void LinkedList::AddBefore(int value_node, int value_them)
 			q = p;
 			p = p->getNext();
 		}
-		q->setNext(value_them);
+		q->setNext(temp);
 		q->getNext()->setNext(p);
 	}
 }
@@ -86,7 +87,7 @@ void LinkedList::DeleteFirst()
 	{
 		Node* p = first;
 		first = p->getNext();
-		delete p;
+		free(p);
 	}
 }
 void LinkedList::DeleteLast()
@@ -99,9 +100,8 @@ void LinkedList::DeleteLast()
 		{
 			p = p->getNext();
 		}
-		delete p->getNext();
+		free(p->getNext());
 		p->setNext(NULL);
-
 	}
 }
 
@@ -120,7 +120,7 @@ void LinkedList::DeleteNode(int value)
 			p = p->getNext();
 		}
 		q->setNext(p->getNext());
-		delete p;
+		free(p);
 	}
 }
 

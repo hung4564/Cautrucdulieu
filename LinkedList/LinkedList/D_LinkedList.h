@@ -10,6 +10,12 @@ public:
 	Node* GetLast();
 	void AddLast(int value);
 	void AddFirst(int value);
+	void AddAffter(int value_node, int value_them);
+	void AddBefore(int value_node, int value_them);
+	void Delete(int value_node);
+	void DeleteFirst();
+	void DeleteLast();
+	Node* Find(int value);
 	void Show();
 private:
 	Node* first;
