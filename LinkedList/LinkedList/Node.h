@@ -5,7 +5,7 @@ class Node
 public:
 	Node();
 	Node(int value);
-
+	~Node();
 public:
 	void show();
 	void setData(int value);

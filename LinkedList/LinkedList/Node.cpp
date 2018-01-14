@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "Node.h"
 using namespace std;
 #include <iostream>
@@ -12,6 +12,9 @@ Node::Node(int value)
 	data = value;
 	left = NULL;
 	right = NULL;
+}
+Node::~Node()
+{
 }
 void Node::show()
 {

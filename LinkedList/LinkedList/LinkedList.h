@@ -5,6 +5,7 @@ class LinkedList
 {
 public:
 	LinkedList();
+	~LinkedList();
 	void Show();
 	void AddFirst(int value);
 	void Add(int value);

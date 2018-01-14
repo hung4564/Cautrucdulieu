@@ -146,11 +146,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="C_LinkedList.h" />
     <ClInclude Include="D_LinkedList.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="Node.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="C_LinkedList.cpp" />
     <ClCompile Include="D_LinkedList.cpp" />
     <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="Node.cpp" />

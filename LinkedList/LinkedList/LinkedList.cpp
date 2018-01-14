@@ -6,6 +6,9 @@ LinkedList::LinkedList()
 {
 	first = NULL;
 }
+LinkedList::~LinkedList()
+{
+}
 void LinkedList::Add(int value)
 {
 	Node* temp = new Node(value);
@@ -87,7 +90,7 @@ void LinkedList::DeleteFirst()
 	{
 		Node* p = first;
 		first = p->getNext();
-		free(p);
+		delete p;
 	}
 }
 void LinkedList::DeleteLast()
@@ -100,7 +103,7 @@ void LinkedList::DeleteLast()
 		{
 			p = p->getNext();
 		}
-		free(p->getNext());
+		delete p->getNext();
 		p->setNext(NULL);
 	}
 }
@@ -120,7 +123,7 @@ void LinkedList::DeleteNode(int value)
 			p = p->getNext();
 		}
 		q->setNext(p->getNext());
-		free(p);
+		delete p;
 	}
 }
 

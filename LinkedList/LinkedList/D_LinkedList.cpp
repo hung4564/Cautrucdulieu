@@ -102,7 +102,7 @@ void D_LinkedList::Delete(int value_node)
 		{
 			temp->getPrevious()->setNext(temp->getNext());
 			temp->getNext()->setPrevious(temp->getPrevious());
-			free(temp);
+			delete temp;
 		}
 	}
 }
@@ -121,7 +121,7 @@ void D_LinkedList::DeleteFirst()
 			Node*q = first;
 			first = q->getNext();
 			first->setPrevious(NULL);
-			free(q);
+			delete q ;
 		}
 	}
 }
@@ -140,7 +140,7 @@ void D_LinkedList::DeleteLast()
 			Node*q = last;
 			last = q->getPrevious();
 			last->setNext(NULL);
-			free(q);
+			delete q;
 		}
 	}
 }
@@ -164,6 +164,5 @@ void D_LinkedList::Show()
 	{
 		cout << p->getData() << ";";
 		p = p->getNext();
-
 	}
 }

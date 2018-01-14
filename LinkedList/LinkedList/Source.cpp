@@ -1,6 +1,7 @@
 #include <iostream>
 #include "LinkedList.h"
 #include "D_LinkedList.h"
+#include "C_LinkedList.h"
 #include "Node.h"
 using namespace std;
 void main_linkedlist()
@@ -41,12 +42,25 @@ void main_D_linkedlist()
 	list.AddBefore(2, 11);
 	list.Show();
 	cout << "\n";
-
+}
+void main_C_linkedlist()
+{
+	C_LinkedList list;
+	for (int i = 0; i <10; i++)
+	{
+		list.Add(i);
+	}
+	for (int i = 0; i < 5; i++)
+	{
+		list.Delete(i);
+	}
+	list.Show();
+	cout << "\n";
 }
 int main()
 {
 	cout << "Day la ham main" << endl;
-	main_D_linkedlist();
+	main_C_linkedlist();
 	cout << "\n";
 	system("pause");
 	return 0;
