@@ -19,10 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Queue.h" />
     <ClInclude Include="Stack.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Stack_Queue\Stack_Queue\Stack_Queue.cpp" />
+    <ClCompile Include="Queue.cpp" />
+    <ClCompile Include="Source.cpp" />
     <ClCompile Include="Stack.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
