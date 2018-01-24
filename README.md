@@ -2,7 +2,9 @@
 ## Mục Lục
 - [Cấu trúc dữ liệu](#cấu-trúc-dữ-liệu)
 	- [Arrays](#arrays)
- 	- [Linked List](#linked-List)
+ 	- [Linked List](#linked-Lists)
+	- [Stack](#stack)
+	- [Queue](#queue)
 ## Cấu trúc dữ liệu
 - ### Arrays
     - Cấp phát mảng vector tự động tùy biến kích cỡ.
@@ -73,3 +75,28 @@
     - [ ] Doubly-linked List
         - [Description - Miêu tả danh sách liên kết đôi (video)](https://www.coursera.org/learn/data-structures/lecture/jpGKD/doubly-linked-lists)
         - Không cần phải cài đặt
+- ### Stack
+    - [ ] [Stacks (video)](https://www.coursera.org/learn/data-structures/lecture/UdKzQ/stacks)
+    - [ ] [Using Stacks Last-In First-Out - Sử dụng stack Vào-Cuối-Ra-Trước (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Using-stacks-last-first-out/149042/177120-4.html)
+    - [ ] Sẽ không cài đặt. Cài đặt với mảng là điều hiển nhiên.
+
+- ### Queue
+    - [ ] [Using Queues First-In First-Out -  Sử dụng hàng đợi Vào-Trước-Ra-Trước(video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Using-queues-first-first-out/149042/177122-4.html)
+    - [ ] [Queue (video)](https://www.coursera.org/learn/data-structures/lecture/EShpq/queue)
+    - [ ] [Circular buffer/FIFO](https://en.wikipedia.org/wiki/Circular_buffer)
+    - [ ] [Priority Queues - Hàng đợi ưu tiên (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Priority-queues-deques/149042/177123-4.html)
+    - [ ] Cài đặt sử dụng danh sách liên kết, áp dụng con trỏ đuôi:
+        - enqueue(value) - Thêm giá trị ở đuôi
+        - dequeue() - Trả về giá trị của dữ liệu được thêm vào xa nhất (thông thường là dữ liệu đầu tiên trong danh sách)
+        - empty()
+    - [ ] Sử dụng mảng cố định kích thước:
+        - enqueue(value) - Thêm giá trị vào cuối mảng
+        - dequeue() - Trả về giá trị của dữ liệu được thêm vào xa nhất
+        - empty()
+        - full()
+    - [ ] Chi phí:
+        - Không cài đặt đúng việc sử dụng danh sách liên kết khi enqueue tại đầu và dequeue tại đuôi sẽ có chi phí là O(n) bởi vì bạn cần con trỏ next tới giá trị cuối cùng, khiến việc phải chạy qua toàn danh sách mỗi lần dequeue
+        - enqueue: O(1) (Không đáng kể, danh sách liên kết và mảng [probing])
+        - dequeue: O(1) (danh sách liên kết và mảng)
+        - empty: O(1) (danh sách liên kết và mảng)
+
