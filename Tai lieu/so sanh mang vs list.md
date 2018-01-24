@@ -1,3 +1,4 @@
+#So sánh mảng với danh sách liên kết
 |   | Mảng  | Danh sách liên kết |
 |---| ------------- | ------------- |
 |Vùng nhớ| Vùng nhớ của các phần tử trong mảng được sắp xếp liên tục nhau  | Vùng nhớ của các phần tử trong danh sách liên kết được sắp xếp tùy ý (do hệ điều hành). Các phần tử lưu 1 con trỏ trỏ tới phần tử tiếp theo.  |
