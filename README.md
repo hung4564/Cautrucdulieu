@@ -1,7 +1,8 @@
 ﻿# Cấu trúc dữ liệu và giải thuật - Data Structure and Algorithms
 ##Mục Lục
-- [Arrays](#Arrays)
-- [Linked List](#Linked-List)
+- [Cấu trúc dữ liệu](#cấu-trúc-dữ-liệu)
+	- [Arrays](#Arrays)
+ 	- [Linked List](#Linked-List)
 ## Cấu trúc dữ liệu
 - ### Arrays
     - Cấp phát mảng vector tự động tùy biến kích cỡ.
