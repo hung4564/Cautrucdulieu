@@ -76,22 +76,22 @@
          - [In The Real World Linked Lists Vs Arrays - Trong thực tế, Danh sách liên kết Vs Mảng (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/QUaUd/in-the-real-world-lists-vs-arrays)    
     - [ ] Singly-linked List 
     	- [ ] Cài đặt 
-		- [x] Show() - Hiện giá trị của danh sách trên màn hình console
-        	- [x] size() - Trả về số lượng các phần tử trong danh sách
-        	- [x] empty() - Giá trị luận lý logic, true nếu rỗng
-        	- [ ] value_at(index) - Trả về phần tử tại vị trí thứ n (danh sách bắt đầu từ 0)
-        	- [x] AddFirst(value) - Thêm phần tử mới vào đầu danh sách
-        	- [x] DeleteFirst() - Xóa phần tử đầu tiên và trả về giá trị này
-        	- [x] Add(value) - Thêm phần tử tại cuối danh sách
-       		- [x] DeleteLast() - Xóa phần tử cuối và trả về giá trị
-        	- [x] GetFirst() - Lấy giá trị của phần tử đầu tiền
-		- [x] AddBefore(value_node,value_them) - thêm phần từ mới trước giá trị node(nếu có)
-	 	- [x] AddAfter(int value_node, int value_them) - thêm phần từ mới sau giá trị node(nếu có)
-        	- [x] insert(index, value) - Thêm phần tử mới tại vị trí chỉ mục, phần tử hiện tại sẽ trỏ về phần tử mới tại vị trí chỉ mục này (A->B->C, thêm N tại vị trí B, A->D->B->C, A hiện giờ sẽ trỏ tới D, chỉ mục 1 sẽ trỏ tới D thay vì B)
-       		- [ ] erase(index) - Xóa node tại vị trí chỉ mục
-        	- [ ] value_n_from_end(n) - Trả về danh sách từ vị trí thứ n đến cuối danh sách
-        	- [ ] reverse() - đảo ngược danh sách
-        	- [x] DeleteNode(value) - Xóa dữ liệu đầu tiên được tìm thấy khớp với giá trị được cho
+			- [x] Show() - Hiện giá trị của danh sách trên màn hình console
+        		- [x] size() - Trả về số lượng các phần tử trong danh sách
+        		- [x] empty() - Giá trị luận lý logic, true nếu rỗng
+        		- [x] AddFirst(value) - Thêm phần tử mới vào đầu danh sách
+        		- [x] DeleteFirst() - Xóa phần tử đầu tiên và trả về giá trị này
+        		- [x] Add(value) - Thêm phần tử tại cuối danh sách
+       			- [x] DeleteLast() - Xóa phần tử cuối và trả về giá trị
+        		- [x] GetFirst() - Lấy giá trị của phần tử đầu tiền
+			- [x] AddBefore(value_node,value_them) - thêm phần từ mới trước giá trị node(nếu có)
+	 		- [x] AddAfter(int value_node, int value_them) - thêm phần từ mới sau giá trị node(nếu có)
+        		- [x] insert(index, value) - Thêm phần tử mới tại vị trí chỉ mục, phần tử hiện tại sẽ trỏ về phần tử mới tại vị trí chỉ mục này (A->B->C, thêm N tại vị trí B, A->D->B->C, A hiện giờ sẽ trỏ tới D, chỉ mục 1 sẽ trỏ tới D thay vì B)
+       			- [ ] erase(index) - Xóa node tại vị trí chỉ mục
+        		- [ ] value_n_from_end(n) - Trả về danh sách từ vị trí thứ n đến cuối danh sách
+        		- [ ] reverse() - đảo ngược danh sách		
+        		- [ ] value_at(index) - Trả về phần tử tại vị trí thứ n (danh sách bắt đầu từ 0)
+        		- [x] DeleteNode(value) - Xóa dữ liệu đầu tiên được tìm thấy khớp với giá trị được cho
     - [ ] Doubly-linked List   
         - [ ] Cài đặt		
         	- [ ] size() - Trả về số lượng các phần tử trong danh sách
