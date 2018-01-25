@@ -67,33 +67,33 @@
 
 - ### Linked Lists
     - [X] Miêu tả:
-          - [X] [Singly Linked Lists - Danh sách liên kết đơn](./docs/Linked%20list.md#single-linked-list)
-	  - [X] [Doubly Linked Lists - Danh sách liên kết đôi](./docs/Linked%20list.md#doubly-linked-list)
-	  - [X] [Circular Linked List - Danh sách liên kết vòng](./docs/Linked%20list.md#circular-linked-list)
+         - [X] [Singly Linked Lists - Danh sách liên kết đơn](./docs/Linked%20list.md#single-linked-list)
+	       - [X] [Doubly Linked Lists - Danh sách liên kết đôi](./docs/Linked%20list.md#doubly-linked-list)
+	       - [X] [Circular Linked List - Danh sách liên kết vòng](./docs/Linked%20list.md#circular-linked-list)
     - [ ] Danh sách liên kết so sánh với Mảng:
-    	  - [X] [So sánh](./docs/so%20sanh%20mang%20vs%20list.md)
-          - [Core Linked Lists Vs Arrays - Danh sách liên kết Vs Mảng (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/rjBs9/core-linked-lists-vs-arrays)
-          - [In The Real World Linked Lists Vs Arrays - Trong thực tế, Danh sách liên kết Vs Mảng (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/QUaUd/in-the-real-world-lists-vs-arrays)
+    	 - [X] [So sánh](./docs/so%20sanh%20mang%20vs%20list.md)
+         - [Core Linked Lists Vs Arrays - Danh sách liên kết Vs Mảng (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/rjBs9/core-linked-lists-vs-arrays)
+         - [In The Real World Linked Lists Vs Arrays - Trong thực tế, Danh sách liên kết Vs Mảng (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/QUaUd/in-the-real-world-lists-vs-arrays)
     - [ ] [Why you should avoid linked lists - Tại sao bạn nên tránh danh sách liên kết(video)](https://www.youtube.com/watch?v=YQs6IC-vgmo)
     - [ ] Ghi chú: Bạn cần kiến thức về con trỏ trỏ về con trỏ:
         (Khi bạn chuyển một con trỏ vào trong 1 thân hàm khiến thay đổi địa chỉ mà con trỏ trỏ về)
         Trang này giúp bạn có cái nhìn khái quát về con trỏ trỏ tới con trỏ. Tôi không khuyến khích đọc lướt qua danh sách này. Đề tài này rất khó đọc và nắm bắt.
         - [Pointers to Pointers - Con trỏ trỏ tới con trỏ](https://www.eskimo.com/~scs/cclass/int/sx8.html)
     - [ ] Cài đặt 
-          - [ ] size() - Trả về số lượng các phần tử trong danh sách
-          - [ ] empty() - Giá trị luận lý logic, true nếu rỗng
-          - [ ] value_at(index) - Trả về phần tử tại vị trí thứ n (danh sách bắt đầu từ 0)
-          - [x] push_front(value) - Thêm phần tử mới vào đầu danh sách
-          - [x] pop_front() - Xóa phần tử đầu tiên và trả về giá trị này
-          - [x] push_back(value) - Thêm phần tử tại cuối danh sách
-          - [x] pop_back() - Xóa phần tử cuối và trả về giá trị
-          - [ ] front() - Lấy giá trị của phần tử đầu tiền
-          - [ ] back() - Lấy giá trị của phần tử cuối cùng
-          - [x] insert(index, value) - Thêm phần tử mới tại vị trí chỉ mục, phần tử hiện tại sẽ trỏ về phần tử mới tại vị trí chỉ mục này (A->B->C, thêm N tại vị trí B, A->D->B->C, A hiện giờ sẽ trỏ tới D, chỉ mục 1 sẽ trỏ tới D thay vì B)
-          - [ ] erase(index) - Xóa node tại vị trí chỉ mục
-          - [ ] value_n_from_end(n) - Trả về danh sách từ vị trí thứ n đến cuối danh sách
-          - [ ] reverse() - đảo ngược danh sách
-          - [x] remove_value(value) - Xóa dữ liệu đầu tiên được tìm thấy khớp với giá trị được cho
+        - [ ] size() - Trả về số lượng các phần tử trong danh sách
+        - [ ] empty() - Giá trị luận lý logic, true nếu rỗng
+        - [ ] value_at(index) - Trả về phần tử tại vị trí thứ n (danh sách bắt đầu từ 0)
+        - [x] push_front(value) - Thêm phần tử mới vào đầu danh sách
+        - [x] pop_front() - Xóa phần tử đầu tiên và trả về giá trị này
+        - [x] push_back(value) - Thêm phần tử tại cuối danh sách
+        - [x] pop_back() - Xóa phần tử cuối và trả về giá trị
+        - [ ] front() - Lấy giá trị của phần tử đầu tiền
+        - [ ] back() - Lấy giá trị của phần tử cuối cùng
+        - [x] insert(index, value) - Thêm phần tử mới tại vị trí chỉ mục, phần tử hiện tại sẽ trỏ về phần tử mới tại vị trí chỉ mục này (A->B->C, thêm N tại vị trí B, A->D->B->C, A hiện giờ sẽ trỏ tới D, chỉ mục 1 sẽ trỏ tới D thay vì B)
+        - [ ] erase(index) - Xóa node tại vị trí chỉ mục
+        - [ ] value_n_from_end(n) - Trả về danh sách từ vị trí thứ n đến cuối danh sách
+        - [ ] reverse() - đảo ngược danh sách
+        - [x] remove_value(value) - Xóa dữ liệu đầu tiên được tìm thấy khớp với giá trị được cho
     - [ ] Doubly-linked List
           - [Description - Miêu tả danh sách liên kết đôi (video)](https://www.coursera.org/learn/data-structures/lecture/jpGKD/doubly-linked-lists)
           - Không cần phải cài đặt
