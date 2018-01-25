@@ -9,6 +9,28 @@ LinkedList::LinkedList()
 LinkedList::~LinkedList()
 {
 }
+int LinkedList::Size()
+{
+	if(first==NULL)
+	return 0;
+	else
+	{
+		int n = 0;
+		Node *p;
+		p = first;
+		while (p != NULL)
+		{
+			n++;
+			p = p->getNext();
+		}
+		return n;
+	}
+}
+bool LinkedList::Empty()
+{
+	if (first == NULL) return true;
+	return false;
+}
 void LinkedList::Add(int value)
 {
 	Node* temp = new Node(value);
@@ -124,6 +146,33 @@ void LinkedList::DeleteNode(int value)
 		}
 		q->setNext(p->getNext());
 		delete p;
+	}
+}
+
+void LinkedList::Erase(int index)
+{
+	if (Empty())
+		return;
+	else
+	{
+		if (index == 1) DeleteFirst();
+		else
+		{
+			Node* p;
+			p = first;
+			while (p != NULL)
+			{
+				p = p->getNext();
+				index--;
+				if (index == 1) break;
+			}
+			if (index == 1)
+			{
+				Node*q = p->getNext();
+				p->setNext(q->getNext());
+				delete q;
+			}
+		}
 	}
 }
 
