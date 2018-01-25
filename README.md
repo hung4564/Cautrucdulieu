@@ -67,7 +67,7 @@
 
 - ### Linked Lists
     - [X] Miêu tả:
-        - [X] [Singly Linked Lists - Danh sách liên kết đơn](./docs/Linked-list.md)
+        - [X] [Singly Linked Lists - Danh sách liên kết đơn](./docs)
 		- [X] [Doubly Linked Lists - Danh sách liên kết đôi](./docs/Linked-list.md)
 		- [X] [Circular Linked List - Danh sách liên kết vòng](./docs/Linked-list.md)
     - [ ] Danh sách liên kết so sánh với Mảng:
