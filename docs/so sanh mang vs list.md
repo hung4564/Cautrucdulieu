@@ -1,5 +1,6 @@
 #So sánh mảng với danh sách liên kết
-|   | Mảng  | Danh sách liên kết |
+
+|SO sánh| Mảng  | Danh sách liên kết |
 |---| ------------- | ------------- |
 |Vùng nhớ| Vùng nhớ của các phần tử trong mảng được sắp xếp liên tục nhau  | Vùng nhớ của các phần tử trong danh sách liên kết được sắp xếp tùy ý (do hệ điều hành). Các phần tử lưu 1 con trỏ trỏ tới phần tử tiếp theo.  |
 |Truy cập   | Truy cập tới phần tử trong mảng là truy cập trực tiếp dựa vào chỉ số (ví dụ: a[0], a[1], a[2],…, a[n])  | Cần phải duyệt tuần tự khi muốn truy cập tới phần tử trong danh sách liên kết.  |
