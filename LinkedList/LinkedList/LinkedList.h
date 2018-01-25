@@ -6,6 +6,8 @@ class LinkedList
 public:
 	LinkedList();
 	~LinkedList();
+	int Size();
+	bool Empty();
 	void Show();
 	void AddFirst(int value);
 	void Add(int value);
@@ -14,6 +16,7 @@ public:
 	void DeleteFirst();
 	void DeleteLast();
 	void DeleteNode(int value);
+	void Erase(int index);
 	Node* Find(int value);
 	Node* GetFirst();
 private:

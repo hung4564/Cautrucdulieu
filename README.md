@@ -66,37 +66,62 @@
         - Không gian cần thiết = (Kích cở của mảng, thường >= n)* kích thước của 1 phần tử, cho dù là 2n, vẫn xem như O(n)
 
 - ### Linked Lists
-    - [X] Miêu tả:
-        - [X] [Singly Linked Lists - Danh sách liên kết đơn](./docs/Linked%20list.md#single-linked-list)
-	 - [X] [Doubly Linked Lists - Danh sách liên kết đôi](./docs/Linked%20list.md#doubly-linked-list)
-	 - [X] [Circular Linked List - Danh sách liên kết vòng](./docs/Linked%20list.md#circular-linked-list)
-    - [ ] Danh sách liên kết so sánh với Mảng:
+	- [X] Miêu tả:
+		- [X] [Singly Linked Lists - Danh sách liên kết đơn](./docs/Linked%20list.md#single-linked-list)
+		- [X] [Doubly Linked Lists - Danh sách liên kết đôi](./docs/Linked%20list.md#doubly-linked-list)
+		- [X] [Circular Linked List - Danh sách liên kết vòng](./docs/Linked%20list.md#circular-linked-list)
+	- [ ] Danh sách liên kết so sánh với Mảng:
     	- [X] [So sánh](./docs/so%20sanh%20mang%20vs%20list.md)
-        - [Core Linked Lists Vs Arrays - Danh sách liên kết Vs Mảng (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/rjBs9/core-linked-lists-vs-arrays)
-        - [In The Real World Linked Lists Vs Arrays - Trong thực tế, Danh sách liên kết Vs Mảng (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/QUaUd/in-the-real-world-lists-vs-arrays)
-    - [ ] [Why you should avoid linked lists - Tại sao bạn nên tránh danh sách liên kết(video)](https://www.youtube.com/watch?v=YQs6IC-vgmo)
-    - [ ] Ghi chú: Bạn cần kiến thức về con trỏ trỏ về con trỏ:
-        (Khi bạn chuyển một con trỏ vào trong 1 thân hàm khiến thay đổi địa chỉ mà con trỏ trỏ về)
-        Trang này giúp bạn có cái nhìn khái quát về con trỏ trỏ tới con trỏ. Tôi không khuyến khích đọc lướt qua danh sách này. Đề tài này rất khó đọc và nắm bắt.
-        - [Pointers to Pointers - Con trỏ trỏ tới con trỏ](https://www.eskimo.com/~scs/cclass/int/sx8.html)
-    - [ ] Cài đặt (Tôi đã thực hiện với con trỏ đuôi và không dùng con trỏ đuôi):
-        - [ ] size() - Trả về số lượng các phần tử trong danh sách
-        - [ ] empty() - Giá trị luận lý logic, true nếu rỗng
-        - [ ] value_at(index) - Trả về phần tử tại vị trí thứ n (danh sách bắt đầu từ 0)
-        - [ ] push_front(value) - Thêm phần tử mới vào đầu danh sách
-        - [ ] pop_front() - Xóa phần tử đầu tiên và trả về giá trị này
-        - [ ] push_back(value) - Thêm phần tử tại cuối danh sách
-        - [ ] pop_back() - Xóa phần tử cuối và trả về giá trị
-        - [ ] front() - Lấy giá trị của phần tử đầu tiền
-        - [ ] back() - Lấy giá trị của phần tử cuối cùng
-        - [ ] insert(index, value) - Thêm phần tử mới tại vị trí chỉ mục, phần tử hiện tại sẽ trỏ về phần tử mới tại vị trí chỉ mục này (A->B->C, thêm N tại vị trí B, A->D->B->C, A hiện giờ sẽ trỏ tới D, chỉ mục 1 sẽ trỏ tới D thay vì B)
-        - [ ] erase(index) - Xóa node tại vị trí chỉ mục
-        - [ ] value_n_from_end(n) - Trả về danh sách từ vị trí thứ n đến cuối danh sách
-        - [ ] reverse() - đảo ngược danh sách
-        - [ ] remove_value(value) - Xóa dữ liệu đầu tiên được tìm thấy khớp với giá trị được cho
-    - [ ] Doubly-linked List
-        - [Description - Miêu tả danh sách liên kết đôi (video)](https://www.coursera.org/learn/data-structures/lecture/jpGKD/doubly-linked-lists)
-        - Không cần phải cài đặt
+		- [Core Linked Lists Vs Arrays - Danh sách liên kết Vs Mảng (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/rjBs9/core-linked-lists-vs-arrays)
+      - [In The Real World Linked Lists Vs Arrays - Trong thực tế, Danh sách liên kết Vs Mảng (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/QUaUd/in-the-real-world-lists-vs-arrays)    
+	- [ ] Singly-linked List
+		- [ ] Cài đặt
+			- [x] Show() - Hiện giá trị của danh sách trên màn hình console
+			- [x] size() - Trả về số lượng các phần tử trong danh sách
+			- [x] empty() - Giá trị luận lý logic, true nếu rỗng
+			- [x] AddFirst(value) - Thêm phần tử mới vào đầu danh sách
+			- [x] DeleteFirst() - Xóa phần tử đầu tiên và trả về giá trị này
+			- [x] Add(value) - Thêm phần tử tại cuối danh sách
+			- [x] DeleteLast() - Xóa phần tử cuối và trả về giá trị
+			- [x] GetFirst() - Lấy giá trị của phần tử đầu tiền
+			- [x] AddBefore(value_node,value_them) - thêm phần từ mới trước giá trị node(nếu có)
+			- [x] AddAfter(int value_node, int value_them) - thêm phần từ mới sau giá trị node(nếu có)
+			- [x] DeleteNode(value) - Xóa dữ liệu đầu tiên được tìm thấy khớp với giá trị được cho
+			- [x] Find(value) - Trả về phần tử chứa giá trị cần tìm
+			- [ ] insert(index, value) - Thêm phần tử mới tại vị trí chỉ mục, phần tử hiện tại sẽ trỏ về phần tử mới tại vị trí chỉ mục này (A->B->C, thêm N tại vị trí B, A->D->B->C, A hiện giờ sẽ trỏ tới D, chỉ mục 1 sẽ trỏ tới D thay vì B)
+			- [x] Erase(index) - Xóa node tại vị trí chỉ mục
+			- [ ] value_n_from_end(n) - Trả về danh sách từ vị trí thứ n đến cuối danh sách
+			- [ ] reverse() - đảo ngược danh sách
+			- [ ] value_at(index) - Trả về phần tử tại vị trí thứ n (danh sách bắt đầu từ 0)
+    - [ ] Doubly-linked List   
+        - [ ] Cài đặt			
+			- [x] Show() - Hiện giá trị của danh sách trên màn hình console
+        	- [ ] size() - Trả về số lượng các phần tử trong danh sách
+        	- [ ] empty() - Giá trị luận lý logic, true nếu rỗng
+        	- [ ] value_at(index) - Trả về phần tử tại vị trí thứ n (danh sách bắt đầu từ 0)
+        	- [x] AddFirst(value) - Thêm phần tử mới vào đầu danh sách
+        	- [x] DeleteFirst() - Xóa phần tử đầu tiên và trả về giá trị này			
+			- [x] Find(value) - Trả về phần tử chứa giá trị cần tìm
+        	- [x] AddLast(value) - Thêm phần tử tại cuối danh sách			
+			- [x] AddBefore(value_node,value_them) - thêm phần từ mới trước giá trị node(nếu có)
+			- [x] AddAfter(int value_node, int value_them) - thêm phần từ mới sau giá trị node(nếu có)
+        	- [x] DeleteLast() - Xóa phần tử cuối và trả về giá trị
+        	- [x] GetFirst() - Lấy giá trị của phần tử đầu tiền
+        	- [x] GetLast() - Lấy giá trị của phần tử cuối cùng
+			- [x] Delete(vaule) -Xóa phần tử chứa giá trị cho sẵn
+        	- [ ] insert(index, value) - Thêm phần tử mới tại vị trí chỉ mục, phần tử hiện tại sẽ trỏ về phần tử mới tại vị trí chỉ mục này (A->B->C, thêm N tại vị trí B, A->D->B->C, A hiện giờ sẽ trỏ tới D, chỉ mục 1 sẽ trỏ tới D thay vì B)
+        	- [ ] erase(index) - Xóa node tại vị trí chỉ mục
+        	- [ ] value_n_from_end(n) - Trả về danh sách từ vị trí thứ n đến cuối danh sách
+        	- [ ] reverse() - đảo ngược danh sách
+        	- [ ] remove_value(value) - Xóa dữ liệu đầu tiên được tìm thấy khớp với giá trị được cho
+    - [ ] Circular-linked List   
+        - [ ] Cài đặt				
+			- [x] Show() - Hiện giá trị của danh sách trên màn hình console
+        	- [ ] size() - Trả về số lượng các phần tử trong danh sách
+        	- [ ] empty() - Giá trị luận lý logic, true nếu rỗng
+        	- [x] GetRoot() - Lấy giá trị của phần tử gốc			
+			- [x] Delete(vaule) -Xóa phần tử chứa giá trị cho sẵn					
+			- [x] Find(value) - Trả về phần tử chứa giá trị cần tìm
 - ### Stack
     - [ ] [Stacks (video)](https://www.coursera.org/learn/data-structures/lecture/UdKzQ/stacks)
     - [ ] [Using Stacks Last-In First-Out - Sử dụng stack Vào-Cuối-Ra-Trước (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Using-stacks-last-first-out/149042/177120-4.html)
