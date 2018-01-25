@@ -67,11 +67,11 @@
 
 - ### Linked Lists
     - [X] Miêu tả:
-        - [X] [Singly Linked Lists - Danh sách liên kết đơn](tai-lieu/Linked-list.md)
-	- [X] [Doubly Linked Lists - Danh sách liên kết đôi](tai-lieu/Linked-list.md)
-	- [X] [Circular Linked List - Danh sách liên kết vòng](tai-lieu/Linked-list.md)
+        - [X] [Singly Linked Lists - Danh sách liên kết đơn](Tai-lieu/Linked-list.md)
+	- [X] [Doubly Linked Lists - Danh sách liên kết đôi](Tai-lieu/Linked-list.md)
+	- [X] [Circular Linked List - Danh sách liên kết vòng](Tai-lieu/Linked-list.md)
     - [ ] Danh sách liên kết so sánh với Mảng:
-    	- [X] [So sánh](tai-lieu/so-sanh-mang vs-list.md)
+    	- [X] [So sánh](Tai-lieu/so-sanh-mang vs-list.md)
         - [Core Linked Lists Vs Arrays - Danh sách liên kết Vs Mảng (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/rjBs9/core-linked-lists-vs-arrays)
         - [In The Real World Linked Lists Vs Arrays - Trong thực tế, Danh sách liên kết Vs Mảng (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/QUaUd/in-the-real-world-lists-vs-arrays)
     - [ ] [Why you should avoid linked lists - Tại sao bạn nên tránh danh sách liên kết(video)](https://www.youtube.com/watch?v=YQs6IC-vgmo)
