@@ -30,7 +30,8 @@
 ## Cấu trúc dữ liệu
 - ### Arrays
     - Cấp phát mảng vector tự động tùy biến kích cỡ.
-    - [ ] Miêu tả, tên gốc được giữ nguyên kèm với bản dịch sang tiếng Việt:
+    - [ ] Miêu tả:
+        - [ ][Arrays - Mảng](./docs/Array.md)
         - [Arrays - Mảng (video)](https://www.coursera.org/learn/data-structures/lecture/OsBSF/arrays)
         - [UCBerkley CS61B - Linear and Multi-Dim Arrays - Mảng tuyến tính và mảng đa chiều(video)](https://youtu.be/Wp8oiO_CZZE?t=15m32s)
         - [Basic Arrays - Mảng cơ bản (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Basic-arrays/149042/177104-4.html)
@@ -73,7 +74,8 @@
 	- [ ] Danh sách liên kết so sánh với Mảng:
     	- [X] [So sánh](./docs/so%20sanh%20mang%20vs%20list.md)
 		- [Core Linked Lists Vs Arrays - Danh sách liên kết Vs Mảng (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/rjBs9/core-linked-lists-vs-arrays)
-      - [In The Real World Linked Lists Vs Arrays - Trong thực tế, Danh sách liên kết Vs Mảng (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/QUaUd/in-the-real-world-lists-vs-arrays)    
+        
+        - [In The Real World Linked Lists Vs Arrays - Trong thực tế, Danh sách liên kết Vs Mảng (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/QUaUd/in-the-real-world-lists-vs-arrays)    
 	- [ ] Singly-linked List
 		- [ ] Cài đặt
 			- [x] Show() - Hiện giá trị của danh sách trên màn hình console
