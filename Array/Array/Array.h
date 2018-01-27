@@ -8,7 +8,7 @@ public:
 private:
 	int count;
 	int max;
-	int* array;
+	int* array = nullptr;
 };
 
 #endif // !ARRAY_H

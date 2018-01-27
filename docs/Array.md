@@ -19,7 +19,12 @@ Mảng gồm các bản ghi có kiểu giống nhau, có kích thước cố đ�
 
 Nhược điểm
 - Không thể thay đổi kích thước của mảng khi chương trình dang thực hiện
-
+    - Thời gian thực thi
+        - O(1) để thêm/xóa tại vị trí cuối (tính luôn cả cấp phát lại để có thêm không gian lưu trữ), đánh chỉ mục, hay cập nhật
+        - O(n) để thêm/xóa tại bất cứ đâu
+    - Không gian
+        - Liên tục trong bộ nhớ, giúp cải thiện hiệu suất
+        - Không gian cần thiết = (Kích cở của mảng, thường >= n)* kích thước của 1 phần tử, cho dù là 2n, vẫn xem như O(n)
 ### Cài đặt
 
 ## Vector

@@ -33,6 +33,17 @@
         - Miêu tả            
             - [X] [Arrays - Mảng](./docs/Array.md)
         - [ ] Cài đặt 
+            - [ ] size() - Số lượng các phần tử trong mảng
+            - [ ] capacity() - Số lượng tối đa các phần tử mà mảng có thể lưu trữ
+            - [ ] is_empty() - Kiểm tra mảng rỗng
+            - [ ] at(index) - Trả về phần tử ở vị trí chỉ mục (index), hoặc lỗi nếu rơi ra ngoài chỉ mục
+            - [ ] push(item) Thêm vào một phần tử mới
+            - [ ] insert(index, item) - Thêm một phần tử mới tại vị trí của chỉ mục, điều chỉnh lại chỉ mục và đưa các phần tử còn lại dịch chuyển theo
+            - [ ] prepend(item) - Thêm tại vị trí chỉ mục 0, hay đầu tiên
+            - [ ] pop() - trả về phần tử cuối cùng
+            - [ ] delete(index) - Xóa phần tử tại chỉ mục, dịch chuyển lại các phần tử trong mảng
+            - [ ] remove(item) - Tìm theo giá trị của phần tử và xóa chỉ mục đang lưu trữ cho phần tử này (áp dụng với việc nhiều phần tử có cùng giá trị)
+            - [ ] find(item) - Tìm theo giá trị của phần tử và trả về chỉ mục đầu tiên tìm được, -1 nếu không tìm thấy
     - Vector
         - Miêu tả:    
             - Cấp phát mảng vector tự động tùy biến kích cỡ
@@ -55,14 +66,9 @@
             - [ ] remove(item) - Tìm theo giá trị của phần tử và xóa chỉ mục đang lưu trữ cho phần tử này (áp dụng với việc nhiều phần tử có cùng giá trị)
             - [ ] find(item) - Tìm theo giá trị của phần tử và trả về chỉ mục đầu tiên tìm được, -1 nếu không tìm thấy
             - [ ] resize(new_capacity) // private function
-            - Khi tới giới hạn của mảng, tăng gấp đôi giá trị độ dài mảng để thay đổi kích thước
-            - Khi xóa 1 thành phần, nếu kích thước hiện tại chỉ bằng 1/4 kích thước được cấp phát, thay đổi thành 1/2
-             - [ ] Thời gian thực thi
-                - O(1) để thêm/xóa tại vị trí cuối (tính luôn cả cấp phát lại để có thêm không gian lưu trữ), đánh chỉ mục, hay cập nhật
-                - O(n) để thêm/xóa tại bất cứ đâu
-            - [ ] Không gian
-                - Liên tục trong bộ nhớ, giúp cải thiện hiệu suất
-                - Không gian cần thiết = (Kích cở của mảng, thường >= n)* kích thước của 1 phần tử, cho dù là 2n, vẫn xem như O(n)
+                - Khi tới giới hạn của mảng, tăng gấp đôi giá trị độ dài mảng để thay đổi kích thước
+                - Khi xóa 1 thành phần, nếu kích thước hiện tại chỉ bằng 1/4 kích thước được cấp phát, thay đổi thành 1/2
+           
 
 - ### Linked Lists
 	- [X] Miêu tả:
