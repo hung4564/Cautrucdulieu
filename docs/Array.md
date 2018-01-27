@@ -1,9 +1,10 @@
 # Array - Mảng
 ## Mục Lục
-- [Miêu tả](#Miêu-tả)
-- [Cài đặt]()
+- [Array](#Array)
+- [Vector](#Vector)
 
-## Miêu tả
+## Array
+### Miêu tả
 Mảng (Array) là  danh sách các phần tử có không gian bộ nhớ được đặt liên tiếp nhau bộ nhớ. 
 Mảng gồm các bản ghi có kiểu giống nhau, có kích thước cố định, mỗi phần tử được xác định bởi chỉ số.
 
@@ -18,3 +19,9 @@ Mảng gồm các bản ghi có kiểu giống nhau, có kích thước cố đ�
 
 Nhược điểm
 - Không thể thay đổi kích thước của mảng khi chương trình dang thực hiện
+
+### Cài đặt
+
+## Vector
+### Miêu tả
+### Cài đặt
