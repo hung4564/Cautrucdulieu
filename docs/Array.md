@@ -1,7 +1,7 @@
 # Array - Mảng
 ## Mục Lục
-- [Array](#Array)
-- [Vector](#Vector)
+- [Array](#array)
+- [Vector](#vector)
 
 ## Array
 ### Miêu tả
