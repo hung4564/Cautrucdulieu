@@ -11,6 +11,12 @@ public:
 	int Capacity();
 	int At(int index);
 	void Push(int value);
+	void Insert(int index, int item);
+	void Prepend(int item);
+	int Pop();
+	int Find(int item);
+	void Delete(int index);
+	void Remove(int item);
 private:
 	int count;
 	int max;
