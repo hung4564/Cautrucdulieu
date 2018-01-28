@@ -33,11 +33,9 @@
         - Miêu tả            
             - [X] [Arrays - Mảng](./docs/Array.md)
         - [ ] Cài đặt 
-            - [ ] size() - Số lượng các phần tử trong mảng
-            - [ ] capacity() - Số lượng tối đa các phần tử mà mảng có thể lưu trữ
-            - [ ] is_empty() - Kiểm tra mảng rỗng
-            - [ ] at(index) - Trả về phần tử ở vị trí chỉ mục (index), hoặc lỗi nếu rơi ra ngoài chỉ mục
-            - [ ] push(item) Thêm vào một phần tử mới
+            - [X] capacity() - Số lượng tối đa các phần tử mà mảng có thể lưu trữ
+            - [X] at(index) - Trả về phần tử ở vị trí chỉ mục (index), hoặc lỗi nếu rơi ra ngoài chỉ mục
+            - [X] push(item) Thêm vào một phần tử mới
             - [ ] insert(index, item) - Thêm một phần tử mới tại vị trí của chỉ mục, điều chỉnh lại chỉ mục và đưa các phần tử còn lại dịch chuyển theo
             - [ ] prepend(item) - Thêm tại vị trí chỉ mục 0, hay đầu tiên
             - [ ] pop() - trả về phần tử cuối cùng
