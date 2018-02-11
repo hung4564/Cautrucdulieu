@@ -1,11 +1,14 @@
 # Giải thuật sặp xếp - Sort
 
+- [Interchange Sort - Đổi chỗ trực tiếp](#interchange-sort---đổi-chỗ-trực-tiếp)
+- [Selection Sort - Chọn trục tiếp](#selection-sort---chọn-trục-tiếp)
+
 ## Interchange Sort - Đổi chỗ trực tiếp
 
 - [Nghịch thế](#nghịch-thế)
-- [Ý tưởng giải thuật](#ý-tưởng-giải-thuật)
-- [Cài đặt](#cài-đặt)
-- [Độ phức tạp thuật toán](#độ-phức-tạp-thuật-toán)
+- [Ý tưởng giải thuật](#interchange_sort-ytuong)
+- [Cài đặt](#interchange_sort-setup)
+- [Độ phức tạp thuật toán](#interchange_sort-dpt)
 
 ### Nghịch thế
 
@@ -18,9 +21,13 @@ Kết quả:
 - (29,-1),(29,10),(29,23)
 - (10,5)
 
+<a name="interchange_sort-ytuong"></a>
+
 ### Ý tưởng giải thuật
 
 Giải thuật được thực hiện bằng cách duyệt qua tất các các cặp giá trị trong mảng và néu gặp cặp nghịch thế sẽ thực hiện viiệc hoán vị(đổi chỗ) cho nhau.
+
+<a name="interchange_sort-setup"></a>
 
 ### Cài đặt
 
@@ -37,6 +44,8 @@ Giải thuật được thực hiện bằng cách duyệt qua tất các các c
     else Dừng
 ```
 
+<a name="interchange_sort-dpt"></a>
+
 ### Độ phức tạp thuật toán
 
 - Số bước so sánh: thuật toán gồm n-1 bước, ở bước thứ i có n-i phép so sánh -> có tổng cộng 1+2+...+n-1=n(n-1)/2  phép so sánh
@@ -44,3 +53,17 @@ Giải thuật được thực hiện bằng cách duyệt qua tất các các c
   - Tốt nhất: 0(mảng đã được sắp xếp)
   - Xấu nhất: n(n-1)/2(mảng sắp xếp ngược với yêu cầu)
 - Độ phức tạp(N^2)
+
+## Selection Sort - Chọn trục tiếp
+
+- [Ý tưởng giải thuật](#selection_sort-ytuong)
+- [Cài đặt](#cài-đặt)
+- [Độ phức tạp thuật toán](#độ-phức-tạp-thuật-toán)
+
+<a name="selection_sort-ytuong"></a>
+
+### Ý tưởng giải thuật
+
+- Chọn phần tử nhó nhất trong N phần tự trong dãy ban đầu.
+- Đưa phần từ này về vị trí đầu dãy hiền hành
+- Xem dãy hiện hành chỉ còn N-1 phần tử và lặp lại các bước đến khi chỉ còn 1 phần tử.
