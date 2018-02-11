@@ -2,15 +2,16 @@
 using namespace std;
 void NhapMang(int a[], int n);
 void XuatMang(int a[], int n);
-void Sort_Interchange(int a[],int n);
 void Hoanvi(int &a, int &b);
+void Sort_Interchange(int a[], int n);
+void Sort_Selection(int a[], int n);
 int main()
 {
 	int n = 5;
 	int a[10];
 	NhapMang(a, n);
 	XuatMang(a, n);
-	Sort_Interchange(a, n);
+	Sort_Selection(a, n);
 	XuatMang(a,n);
 	cout << endl;
 	system("pause");
@@ -45,22 +46,6 @@ void XuatMang(int a[], int n)
 	}
 }
 /// <summary>
-/// Interchange Sort - Đổi chỗ trực tiếp tăng dần
-/// </summary>
-/// <param name="a">Mảng cần sắp xếp</param>
-/// <param name="n">Số lượng phần tử</param>
-void Sort_Interchange(int a[], int n)
-{
-	for (int i = 0; i < n-1; i++)
-	{
-		for (int j = i + 1; j < n; j++)
-		{
-			// sắp xếp tăng dần
-			if (a[j] < a[i]) Hoanvi(a[j], a[i]);
-		}
-	}
-}
-/// <summary>
 /// Hoán vị 2 phần tử
 /// </summary>
 /// <param name="a">Phần tử đầu tiên</param>
@@ -71,4 +56,43 @@ void Hoanvi(int &a, int &b)
 	c = a;
 	a = b;
 	b = c;
+}
+
+/// <summary>
+/// Interchange Sort - Đổi chỗ trực tiếp tăng dần
+/// </summary>
+/// <param name="a">Mảng cần sắp xếp</param>
+/// <param name="n">Số lượng phần tử</param>
+void Sort_Interchange(int a[], int n)
+{
+	for (int i = 0; i < n - 1; i++)
+	{
+		for (int j = i + 1; j < n; j++)
+		{
+			// sắp xếp tăng dần
+			if (a[j] < a[i]) Hoanvi(a[j], a[i]);
+		}
+	}
+}
+
+/// <summary>
+/// Selection Sort - Chọn trục tiếp
+/// </summary>
+/// <param name="a">Mảng cần sắp xếp</param>
+/// <param name="n">Số lượng phần tử</param>
+void Sort_Selection(int a[], int n)
+{
+	int min;//chi muc cua phan tu nho nhat
+	for (int i = 0; i < n-1; i++)
+	{
+		min = i;
+		for (int j = i+1; j < n; j++)
+		{
+			if (a[min] > a[j])
+			{
+				min = j;
+			}
+		}
+		Hoanvi(a[min], a[i]);
+	}
 }
