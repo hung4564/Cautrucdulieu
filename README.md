@@ -32,16 +32,16 @@
     - Array
         - Miêu tả            
             - [X] [Arrays - Mảng](./docs/Array.md)
-        - [ ] Cài đặt 
+        - [X] Cài đặt 
             - [X] capacity() - Số lượng tối đa các phần tử mà mảng có thể lưu trữ
             - [X] at(index) - Trả về phần tử ở vị trí chỉ mục (index), hoặc lỗi nếu rơi ra ngoài chỉ mục
             - [X] push(item) Thêm vào một phần tử mới
-            - [ ] insert(index, item) - Thêm một phần tử mới tại vị trí của chỉ mục, điều chỉnh lại chỉ mục và đưa các phần tử còn lại dịch chuyển theo
-            - [ ] prepend(item) - Thêm tại vị trí chỉ mục 0, hay đầu tiên
-            - [ ] pop() - trả về phần tử cuối cùng
-            - [ ] delete(index) - Xóa phần tử tại chỉ mục, dịch chuyển lại các phần tử trong mảng
-            - [ ] remove(item) - Tìm theo giá trị của phần tử và xóa chỉ mục đang lưu trữ cho phần tử này (áp dụng với việc nhiều phần tử có cùng giá trị)
-            - [ ] find(item) - Tìm theo giá trị của phần tử và trả về chỉ mục đầu tiên tìm được, -1 nếu không tìm thấy
+            - [X] insert(index, item) - Thêm một phần tử mới tại vị trí của chỉ mục, điều chỉnh lại chỉ mục và đưa các phần tử còn lại dịch chuyển theo
+            - [X] prepend(item) - Thêm tại vị trí chỉ mục 0, hay đầu tiên
+            - [X] pop() - trả về phần tử cuối cùng
+            - [X] delete(index) - Xóa phần tử tại chỉ mục, dịch chuyển lại các phần tử trong mảng
+            - [X] remove(item) - Tìm theo giá trị của phần tử và xóa chỉ mục đang lưu trữ cho phần tử này (áp dụng với việc nhiều phần tử có cùng giá trị)
+            - [X] find(item) - Tìm theo giá trị của phần tử và trả về chỉ mục đầu tiên tìm được, -1 nếu không tìm thấy
     - Vector
         - Miêu tả:    
             - Cấp phát mảng vector tự động tùy biến kích cỡ
