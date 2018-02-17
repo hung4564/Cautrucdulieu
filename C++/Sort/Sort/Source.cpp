@@ -7,14 +7,15 @@ void Sort_Interchange(int a[], int n);
 void Sort_Selection(int a[], int n);
 void Sort_Bubble(int a[], int n);
 void Sort_Insertion(int a[], int n);
+void Sort_Shell(int a[], int n, int divideBy);
 int main()
 {
 	int n = 5;
 	int a[10];
 	NhapMang(a, n);
 	XuatMang(a, n);
-	Sort_Insertion(a, n);
-	XuatMang(a,n);
+	Sort_Shell(a, n, 2);
+	XuatMang(a, n);
 	cout << endl;
 	system("pause");
 	return 0;
@@ -32,7 +33,6 @@ void NhapMang(int a[], int n)
 		cout << "a[" << i << "]= ";
 		cin >> a[i];
 	}
-	
 }
 /// <summary>
 /// Xuats the mang.
@@ -41,10 +41,11 @@ void NhapMang(int a[], int n)
 /// <param name="n">Số lượng phần tử</param>
 void XuatMang(int a[], int n)
 {
-	cout << endl <<"gia tri cac phan tu trong mang la"<<endl;
+	cout << endl
+		 << "gia tri cac phan tu trong mang la" << endl;
 	for (int i = 0; i < n; i++)
 	{
-		cout <<a[i]<<";";
+		cout << a[i] << ";";
 	}
 }
 /// <summary>
@@ -72,7 +73,8 @@ void Sort_Interchange(int a[], int n)
 		for (int j = i + 1; j < n; j++)
 		{
 			// sắp xếp tăng dần
-			if (a[j] < a[i]) Hoanvi(a[j], a[i]);
+			if (a[j] < a[i])
+				Hoanvi(a[j], a[i]);
 		}
 	}
 }
@@ -84,11 +86,11 @@ void Sort_Interchange(int a[], int n)
 /// <param name="n">Số lượng phần tử</param>
 void Sort_Selection(int a[], int n)
 {
-	int min;//chi muc cua phan tu nho nhat
-	for (int i = 0; i < n-1; i++)
+	int min; //chi muc cua phan tu nho nhat
+	for (int i = 0; i < n - 1; i++)
 	{
 		min = i;
-		for (int j = i+1; j < n; j++)
+		for (int j = i + 1; j < n; j++)
 		{
 			if (a[min] > a[j])
 			{
@@ -105,12 +107,13 @@ void Sort_Selection(int a[], int n)
 /// <param name="n">Số lượng phần tử</param>
 void Sort_Bubble(int a[], int n)
 {
-	int j=n-1, i=0;
-	for(i=0;i<n-1;i++)
+	int j = n - 1, i = 0;
+	for (i = 0; i < n - 1; i++)
 	{
-		for(j=n-1;j>i;j--)
+		for (j = n - 1; j > i; j--)
 		{
-			if(a[j]<a[j-1]) Hoanvi(a[j],a[j-1]);
+			if (a[j] < a[j - 1])
+				Hoanvi(a[j], a[j - 1]);
 		}
 	}
 }
@@ -121,19 +124,42 @@ void Sort_Bubble(int a[], int n)
 /// <param name="n">Số lượng phần tử</param>
 void Sort_Insertion(int a[], int n)
 {
-	int pos;//vị trí cần chèn
+	int pos; //vị trí cần chèn
 	int i;
 	int x; // lưu phần từ a[i] tránh bị đè khi đổi chỗ các phần từ về sau
-	for(i=1;i<n;i++)
+	for (i = 1; i < n; i++)
 	{
-		x=a[i];
-		pos=i-1;
+		x = a[i];
+		pos = i - 1;
 		// tìm vị trí để chèn x vào đoạn trước
-		while((pos>=0)&&a[pos]>x)
+		while ((pos >= 0) && a[pos] > x)
 		{
-			a[pos+1]=a[pos];
+			a[pos + 1] = a[pos];
 			pos--;
 		}
-		a[pos+1]=x;
+		a[pos + 1] = x;
+	}
+}
+/// <summary>
+/// Shell Sort
+/// </summary>
+/// <param name="a">Mảng cần sắp xếp</param>
+/// <param name="n">Số lượng phần tử</param>
+void Sort_Shell(int a[], int n, int divideBy)
+{
+	int i, j, x, gap;
+	for (gap = n / divideBy; gap > 0; gap /= divideBy)
+	{
+		for (i = gap; i < n; i++)
+		{
+			x = a[i];
+			j = i - gap; //a[j] đừng kề trước a[i] trong cùng 1 dãy còn
+			while ((x < a[j]) && (j >= 0))	// sắp xếp các dãy con chứa x
+			{								// bằng phương pháp Insertion Sort
+				a[j + gap] = a[j];
+				j = j - gap;
+			}
+			a[j + gap] = x;
+		}
 	}
 }

@@ -165,6 +165,7 @@
     - [x] Sắp xếp đổi chỗ trực tiếp (Insertion Sort)
     - [x] Sắp xếp chèn (Insertion Sort)
     - [x] Sắp xếp nổi bọt (Bubble Sort)
+    - [ ] (Shell Sort)
     - [ ] Sắp xếp chọn vun đống (Heapsort)
     - [ ] Sắp xếp nhanh (Quicksort)
     - [ ] Sắp xếp trộn (Merge Sort)

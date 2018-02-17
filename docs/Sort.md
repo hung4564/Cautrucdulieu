@@ -4,6 +4,7 @@
 - [Selection Sort - Sắp xếp chọn](#selection_sort)
 - [Bubble Sort - Sắp xếp nổi bọt](#bubble_sort)
 - [Insertion Sort - Sắp xếp chèn](#insertion_sort)
+- [Shell Sort](#shell_sort)
 
 ## Interchange Sort - sắp xếp đổi chỗ trực tiếp  <a name="interchange_sort"></a>
 
@@ -169,3 +170,47 @@ void Sort_Insertion(int a[], int n)
 |Xấu nhất|(n-1)/2|n*(n+1)/2-1|
 
 - Độ phức tạp(N^2)
+
+## Shell Sort <a name="shell_sort"></a>
+
+- [Ý tưởng giải thuật](#shell_sort-ytuong)
+- [Cài đặt](#shell_sort-setup)
+- [Độ phức tạp thuật toán](#shell_sort-dpt)
+
+### Ý tưởng giải thuật <a name="shell_sort-ytuong"></a>
+
+- Cải tiến từ phướng pháp [Insertion Sort](#insertion_sort)
+- Phân hoạch dãy thành các dãy con ở cách nhau **h** vị trí
+  - chọn **h** một cách hợp lý:
+    - h = h * 3 + 1(công thức Knuth)
+    - h=h/2 và h đầu bằng n/2
+    - h=h/3 và h đều bằng n/3
+    - h là dãy fibonaci
+    - h là dãy các ngtố giảm dần
+- Sắp xếp các con theo phương pháp chèn trực tiếp
+- Dùng phương pháp [Insertion Sort](#insertion_sort) sắp xếp lại cả dãy
+
+### Cài đặt <a name="shell_sort-setup"></a>
+
+```C++
+void Sort_Shell(int a[], int n, int divideBy)
+{
+    int i, j, x, gap;
+    for (gap = n / divideBy; gap > 0; gap /= divideBy)
+    {
+        for (i = gap; i < n; i++)
+        {
+            x = a[i];
+            j = i - gap; //a[j] đừng kề trước a[i] trong cùng 1 dãy còn
+            while ((x < a[j]) && (j >= 0))  // sắp xếp các dãy con chứa x
+            {                               // bằng phương pháp Insertion Sort
+                a[j + gap] = a[j];
+                j = j - gap;
+            }
+            a[j + gap] = x;
+        }
+    }
+}
+```
+
+### Độ phức tạp thuật toán <a name="shell_sort-dpt"></a>
