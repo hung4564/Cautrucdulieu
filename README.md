@@ -17,54 +17,48 @@
   - [Đồ thị](#đồ-thị)
 - [Thuật toán](#thuật-toán)
   - [Sắp xếp](#sắp-xếp)
-    - Sắp xếp chọn (Selection Sort)
-    - Sắp xếp chèn (Insertion Sort)
-    - Sắp xếp chọn vun đống (Heapsort)
-    - Sắp xếp nhanh (Quicksort)
-    - Sắp xếp trộn (Merge Sort)
   - [Tìm kiếm chuỗi](#tìm-kiếm-chuỗi)
 
 ## Cấu trúc dữ liệu
 
 - ### Arrays
-
   - Array
     - Miêu tả
       - [X] [Arrays - Mảng](./docs/Array.md)
-        - [X] Cài đặt 
-          - [X] capacity() - Số lượng tối đa các phần tử mà mảng có thể lưu trữ
-          - [X] at(index) - Trả về phần tử ở vị trí chỉ mục (index), hoặc lỗi nếu rơi ra ngoài chỉ mục
-          - [X] push(item) Thêm vào một phần tử mới
-          - [X] insert(index, item) - Thêm một phần tử mới tại vị trí của chỉ mục, điều chỉnh lại chỉ mục và đưa các phần tử còn lại dịch chuyển theo
-          - [X] prepend(item) - Thêm tại vị trí chỉ mục 0, hay đầu tiên
-          - [X] pop() - trả về phần tử cuối cùng
-          - [X] delete(index) - Xóa phần tử tại chỉ mục, dịch chuyển lại các phần tử trong mảng
-          - [X] remove(item) - Tìm theo giá trị của phần tử và xóa chỉ mục đang lưu trữ cho phần tử này (áp dụng với việc nhiều phần tử có cùng giá trị)
-          - [X] find(item) - Tìm theo giá trị của phần tử và trả về chỉ mục đầu tiên tìm được, -1 nếu không tìm thấy
-    - Vector
-      - Miêu tả:
-            - Cấp phát mảng vector tự động tùy biến kích cỡ
-            - [ ] [Vector](./docs/Array.md)
-        - [ ] Cài đặt
-          - [ ] Cấp phát vector (Mảng có thể thay đổi với khả năng tự điều chỉnh kích cỡ):
-          - [ ] Tập sử dụng mảng và con trỏ, dùng phép toán con trỏ để nhảy tới một chỉ mục (index) thay vì sử dụng chỉ mục.
-          - [ ] Tạo mảng mới với vùng nhớ được cấp phát sẵn
-                - Có thể triển khai mảng số nguyên một cách nhanh chóng, nhưng không sử dụng các tính năng sẵn có
-                - Bắt đầu với 16, hoặc số lớn hơn, với cấp số nhân của 2 - 16, 32, 64, 128
-            - [ ] size() - Số lượng của các thành phần trong mảng
-            - [ ] capacity() - Số lượng tối đa các phần tử mà mảng có thể lưu trữ
-            - [ ] is_empty() - Kiểm tra mảng rỗng
-            - [ ] at(index) - Trả về phần tử ở vị trí chỉ mục (index), hoặc lỗi nếu rơi ra ngoài chỉ mục
-            - [ ] push(item) Thêm vào một phần tử mới
-            - [ ] insert(index, item) - Thêm một phần tử mới tại vị trí của chỉ mục, điều chỉnh lại chỉ mục và đưa các phần tử còn lại dịch chuyển theo
-            - [ ] prepend(item) - Thêm tại vị trí chỉ mục 0, hay đầu tiên
-            - [ ] pop() - trả về phần tử cuối cùng
-            - [ ] delete(index) - Xóa phần tử tại chỉ mục, dịch chuyển lại các phần tử trong mảng
-            - [ ] remove(item) - Tìm theo giá trị của phần tử và xóa chỉ mục đang lưu trữ cho phần tử này (áp dụng với việc nhiều phần tử có cùng giá trị)
-            - [ ] find(item) - Tìm theo giá trị của phần tử và trả về chỉ mục đầu tiên tìm được, -1 nếu không tìm thấy
-            - [ ] resize(new_capacity) // private function
-              - Khi tới giới hạn của mảng, tăng gấp đôi giá trị độ dài mảng để thay đổi kích thước
-              - Khi xóa 1 thành phần, nếu kích thước hiện tại chỉ bằng 1/4 kích thước được cấp phát, thay đổi thành 1/2
+    - [X] Cài đặt
+      - [X] capacity() - Số lượng tối đa các phần tử mà mảng có thể lưu trữ
+      - [X] at(index) - Trả về phần tử ở vị trí chỉ mục (index), hoặc lỗi nếu rơi ra ngoài chỉ mục
+      - [X] push(item) Thêm vào một phần tử mới
+      - [X] insert(index, item) - Thêm một phần tử mới tại vị trí của chỉ mục, điều chỉnh lại chỉ mục và đưa các phần tử còn lại dịch chuyển theo
+      - [X] prepend(item) - Thêm tại vị trí chỉ mục 0, hay đầu tiên
+      - [X] pop() - trả về phần tử cuối cùng
+      - [X] delete(index) - Xóa phần tử tại chỉ mục, dịch chuyển lại các phần tử trong mảng
+      - [X] remove(item) - Tìm theo giá trị của phần tử và xóa chỉ mục đang lưu trữ cho phần tử này (áp dụng với việc nhiều phần tử có cùng giá trị)
+      - [X] find(item) - Tìm theo giá trị của phần tử và trả về chỉ mục đầu tiên tìm được, -1 nếu không tìm thấy
+  - Vector
+    - Miêu tả:
+      - Cấp phát mảng vector tự động tùy biến kích cỡ
+        - [ ] [Vector](./docs/Array.md)
+    - [ ] Cài đặt
+      - [ ] Cấp phát vector (Mảng có thể thay đổi với khả năng tự điều chỉnh kích cỡ):
+      - [ ] Tập sử dụng mảng và con trỏ, dùng phép toán con trỏ để nhảy tới một chỉ mục (index) thay vì sử dụng chỉ mục.
+      - [ ] Tạo mảng mới với vùng nhớ được cấp phát sẵn
+        - Có thể triển khai mảng số nguyên một cách nhanh chóng, nhưng không sử dụng các tính năng sẵn có
+        - Bắt đầu với 16, hoặc số lớn hơn, với cấp số nhân của 2 - 16, 32, 64, 128
+      - [ ] size() - Số lượng của các thành phần trong mảng
+      - [ ] capacity() - Số lượng tối đa các phần tử mà mảng có thể lưu trữ
+      - [ ] is_empty() - Kiểm tra mảng rỗng
+      - [ ] at(index) - Trả về phần tử ở vị trí chỉ mục (index), hoặc lỗi nếu rơi ra ngoài chỉ mục
+      - [ ] push(item) Thêm vào một phần tử mới
+      - [ ] insert(index, item) - Thêm một phần tử mới tại vị trí của chỉ mục, điều chỉnh lại chỉ mục và đưa các phần tử còn lại dịch chuyển theo
+      - [ ] prepend(item) - Thêm tại vị trí chỉ mục 0, hay đầu tiên
+      - [ ] pop() - trả về phần tử cuối cùng
+      - [ ] delete(index) - Xóa phần tử tại chỉ mục, dịch chuyển lại các phần tử trong mảng
+      - [ ] remove(item) - Tìm theo giá trị của phần tử và xóa chỉ mục đang lưu trữ cho phần tử này (áp dụng với việc nhiều phần tử có cùng giá trị)
+      - [ ] find(item) - Tìm theo giá trị của phần tử và trả về chỉ mục đầu tiên tìm được, -1 nếu không tìm thấy
+      - [ ] resize(new_capacity) // private function
+        - Khi tới giới hạn của mảng, tăng gấp đôi giá trị độ dài mảng để thay đổi kích thước
+        - Khi xóa 1 thành phần, nếu kích thước hiện tại chỉ bằng 1/4 kích thước được cấp phát, thay đổi thành 1/2
 
 - ### Linked Lists
   - [X] Miêu tả:
@@ -163,6 +157,16 @@
 
 ## Thuật toán
 
-### Sắp xếp
+- ### Sắp xếp
+  - Miêu tả
+    - [Sort - Sắp xếp](./docs/Sort.md)
+  - [ ] Cài đặt
+    - [x] Sắp xếp chọn (Selection Sort)
+    - [x] Sắp xếp đổi chỗ trực tiếp (Insertion Sort)
+    - [x] Sắp xếp chèn (Insertion Sort)
+    - [x] Sắp xếp nổi bọt (Bubble Sort)
+    - [ ] Sắp xếp chọn vun đống (Heapsort)
+    - [ ] Sắp xếp nhanh (Quicksort)
+    - [ ] Sắp xếp trộn (Merge Sort)
 
 ### Tìm kiếm chuỗi

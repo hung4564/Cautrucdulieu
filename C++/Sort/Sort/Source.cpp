@@ -5,13 +5,15 @@ void XuatMang(int a[], int n);
 void Hoanvi(int &a, int &b);
 void Sort_Interchange(int a[], int n);
 void Sort_Selection(int a[], int n);
+void Sort_Bubble(int a[], int n);
+void Sort_Insertion(int a[], int n);
 int main()
 {
 	int n = 5;
 	int a[10];
 	NhapMang(a, n);
 	XuatMang(a, n);
-	Sort_Selection(a, n);
+	Sort_Insertion(a, n);
 	XuatMang(a,n);
 	cout << endl;
 	system("pause");
@@ -59,7 +61,7 @@ void Hoanvi(int &a, int &b)
 }
 
 /// <summary>
-/// Interchange Sort - Đổi chỗ trực tiếp tăng dần
+/// Interchange Sort - sắp xếp đổi chỗ trực tiếp tăng dần
 /// </summary>
 /// <param name="a">Mảng cần sắp xếp</param>
 /// <param name="n">Số lượng phần tử</param>
@@ -76,7 +78,7 @@ void Sort_Interchange(int a[], int n)
 }
 
 /// <summary>
-/// Selection Sort - Chọn trục tiếp
+/// Selection Sort - Sắp xếp chọn tăng dần
 /// </summary>
 /// <param name="a">Mảng cần sắp xếp</param>
 /// <param name="n">Số lượng phần tử</param>
@@ -94,5 +96,44 @@ void Sort_Selection(int a[], int n)
 			}
 		}
 		Hoanvi(a[min], a[i]);
+	}
+}
+/// <summary>
+/// Bubble Sort - Sắp xếp nổi bọt
+/// </summary>
+/// <param name="a">Mảng cần sắp xếp</param>
+/// <param name="n">Số lượng phần tử</param>
+void Sort_Bubble(int a[], int n)
+{
+	int j=n-1, i=0;
+	for(i=0;i<n-1;i++)
+	{
+		for(j=n-1;j>i;j--)
+		{
+			if(a[j]<a[j-1]) Hoanvi(a[j],a[j-1]);
+		}
+	}
+}
+/// <summary>
+/// Insertion Sort - Sắp xếp chèn
+/// </summary>
+/// <param name="a">Mảng cần sắp xếp</param>
+/// <param name="n">Số lượng phần tử</param>
+void Sort_Insertion(int a[], int n)
+{
+	int pos;//vị trí cần chèn
+	int i;
+	int x; // lưu phần từ a[i] tránh bị đè khi đổi chỗ các phần từ về sau
+	for(i=1;i<n;i++)
+	{
+		x=a[i];
+		pos=i-1;
+		// tìm vị trí để chèn x vào đoạn trước
+		while((pos>=0)&&a[pos]>x)
+		{
+			a[pos+1]=a[pos];
+			pos--;
+		}
+		a[pos+1]=x;
 	}
 }
