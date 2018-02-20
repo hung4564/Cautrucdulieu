@@ -17,7 +17,8 @@
   - [Đồ thị](#đồ-thị)
 - [Thuật toán](#thuật-toán)
   - [Sắp xếp](#sắp-xếp)
-  - [Tìm kiếm chuỗi](#tìm-kiếm-chuỗi)
+  - [Tìm kiếm](#tìm-kiếm)
+  - [Đệ qui](#đệ-qui)
 
 ## Cấu trúc dữ liệu
 
@@ -155,19 +156,33 @@
      - [ ] `heap_sort()` - nhận vào một mảng chưa sắp xếp, sắp xếp nó tại chỗ (không tốn thêm bộ nhớ) bằng một kỹ thuật sử dụng heap
      - Chú ý: sử dụng min-heap sẽ tiết kiệm được một phép tính (giảm thời gian thực thi thuật toán), nhưng lại tốn gấp đôi bộ nhớ (để chứa kết quả phụ)
 
+## Đồ thị
+
 ## Thuật toán
 
 - ### Sắp xếp
   - Miêu tả
     - [Sort - Sắp xếp](./docs/Sort.md)
   - [ ] Cài đặt
-    - [x] Sắp xếp chọn (Selection Sort)
-    - [x] Sắp xếp đổi chỗ trực tiếp (Insertion Sort)
-    - [x] Sắp xếp chèn (Insertion Sort)
-    - [x] Sắp xếp nổi bọt (Bubble Sort)
-    - [ ] (Shell Sort)
-    - [ ] Sắp xếp chọn vun đống (Heapsort)
-    - [ ] Sắp xếp nhanh (Quicksort)
-    - [ ] Sắp xếp trộn (Merge Sort)
+    - Simple sorts
+      - [x] Sắp xếp chọn (Selection Sort)
+      - [x] Sắp xếp đổi chỗ trực tiếp (Interchange Sort)
+      - [x] Sắp xếp chèn (Insertion Sort)
+    - Efficient sorts
+      - [ ] Sắp xếp chọn vun đống (Heapsort)
+      - [ ] Sắp xếp nhanh (Quicksort)
+      - [ ] Sắp xếp trộn (Merge Sort)
+    - Bubble sort and variants
+      - [x] Sắp xếp nổi bọt (Bubble Sort)
+      - [ ] (Shell Sort)
+      - [ ] Comb sort
+    - Distribution sort
+      - [ ] Counting sort
+      - [ ] Bucket sort
+      - [ ] Radix sort
 
-### Tìm kiếm chuỗi
+- ### Tìm kiếm
+  - Tìm kiếm trên danh sách
+  - Tìm kiếm trên cây
+  - Tìm kiếm trên đồ thị
+- ### Đệ qui
