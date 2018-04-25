@@ -68,7 +68,6 @@
     - [X] [Circular Linked List - Danh sách liên kết vòng](./docs/Linked%20list.md#circular-linked-list)
   - [ ] Danh sách liên kết so sánh với Mảng:
     - [X] [Bảng So sánh](./docs/so%20sanh%20mang%20vs%20list.md)
-    - [Core Linked Lists Vs Arrays - Danh sách liên kết Vs Mảng (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/rjBs9/core-linked-lists-vs-arrays)- [In The Real World Linked Lists Vs Arrays - Trong thực tế, Danh sách liên kết Vs Mảng (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/QUaUd/in-the-real-world-lists-vs-arrays)
   - [ ] Singly-linked List
     - [ ] Cài đặt
       - [x] Show() - Hiện giá trị của danh sách trên màn hình console
@@ -143,18 +142,18 @@
     - [ ] `get_successor` // Trả về phần tử cao nhất trong cây liền sau một gíá trị cho trước hoặc -1 nếu không tìm được
 
 - ### Heap / Priority Queue / Binary Heap
-   - [ ] Tự cài đặt max-heap:
-     - [ ] `insert`
-     - [ ] `sift_up` - cần thiết cho hàm `insert`.
-     - [ ] `get_max` - trả về phần tử lớn nhất mà không xóa nó khỏi heap
-     - [ ] `get_size()` - trả về số lượng các phần từ trong một heap
-     - [ ] `is_empty()` - trả về `true` nếu heap rỗng
-     - [ ] `extract_max` - trà về phần tử lớn nhất và đồng thời xóa nó khỏi heap
-     - [ ] `sift_down` - cần thiết cho hàm `extract_max`
-     - [ ] `remove(i)` - xóa phần tử tại một vị trí `i` cho trước
-     - [ ] `heapify` - tạo một heap từ một mảng các phần tử, cần thiết cho hàm `heap_sort`
-     - [ ] `heap_sort()` - nhận vào một mảng chưa sắp xếp, sắp xếp nó tại chỗ (không tốn thêm bộ nhớ) bằng một kỹ thuật sử dụng heap
-     - Chú ý: sử dụng min-heap sẽ tiết kiệm được một phép tính (giảm thời gian thực thi thuật toán), nhưng lại tốn gấp đôi bộ nhớ (để chứa kết quả phụ)
+  - [ ] Tự cài đặt max-heap:
+    - [ ] `insert`
+    - [ ] `sift_up` - cần thiết cho hàm `insert`.
+    - [ ] `get_max` - trả về phần tử lớn nhất mà không xóa nó khỏi heap
+    - [ ] `get_size()` - trả về số lượng các phần từ trong một heap
+    - [ ] `is_empty()` - trả về `true` nếu heap rỗng
+    - [ ] `extract_max` - trà về phần tử lớn nhất và đồng thời xóa nó khỏi heap
+    - [ ] `sift_down` - cần thiết cho hàm `extract_max`
+    - [ ] `remove(i)` - xóa phần tử tại một vị trí `i` cho trước
+    - [ ] `heapify` - tạo một heap từ một mảng các phần tử, cần thiết cho hàm `heap_sort`
+    - [ ] `heap_sort()` - nhận vào một mảng chưa sắp xếp, sắp xếp nó tại chỗ (không tốn thêm bộ nhớ) bằng một kỹ thuật sử dụng heap
+    - Chú ý: sử dụng min-heap sẽ tiết kiệm được một phép tính (giảm thời gian thực thi thuật toán), nhưng lại tốn gấp đôi bộ nhớ (để chứa kết quả phụ)
 
 ## Đồ thị
 
