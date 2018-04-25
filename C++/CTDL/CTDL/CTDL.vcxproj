@@ -116,20 +116,24 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Array.h" />
+    <ClInclude Include="BinaryTree.h" />
     <ClInclude Include="C_LinkedList.h" />
     <ClInclude Include="D_LinkedList.h" />
     <ClInclude Include="Linkedlist.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Queue.h" />
+    <ClInclude Include="Sort.h" />
     <ClInclude Include="Stack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Array.cpp" />
+    <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="C_LinkedList.cpp" />
     <ClCompile Include="D_LinkedList.cpp" />
     <ClCompile Include="Linkedlist.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="Queue.cpp" />
+    <ClCompile Include="Sort.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Stack.cpp" />
   </ItemGroup>
