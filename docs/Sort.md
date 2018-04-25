@@ -6,7 +6,7 @@
 - [Insertion Sort - Sắp xếp chèn](#insertion_sort)
 - [Shell Sort](#shell_sort)
 
-## Interchange Sort - sắp xếp đổi chỗ trực tiếp  <a name="interchange_sort"></a>
+## Interchange Sort - sắp xếp đổi chỗ trực tiếp
 
 - [Nghịch thế](#nghịch-thế)
 - [Ý tưởng giải thuật](#interchange_sort-ytuong)
@@ -24,11 +24,11 @@ Kết quả:
 - (29,-1),(29,10),(29,23)
 - (10,5)
 
-### Ý tưởng giải thuật <a name="interchange_sort-ytuong"></a>
+### Ý tưởng giải thuật Interchange Sort
 
 Giải thuật được thực hiện bằng cách duyệt qua tất các các cặp giá trị trong mảng và néu gặp cặp nghịch thế sẽ thực hiện viiệc hoán vị(đổi chỗ) cho nhau.
 
-### Cài đặt <a name="interchange_sort-setup"></a>
+### Cài đặt Interchange Sort
 
 ``` C++
 void Sort_Interchange(int a[], int n)
@@ -44,7 +44,7 @@ void Sort_Interchange(int a[], int n)
 }
 ```
 
-### Độ phức tạp thuật toán <a name="interchange_sort-dpt"></a>
+### Độ phức tạp thuật toán Interchange Sort
 
 - Số bước so sánh: thuật toán gồm n-1 bước, ở bước thứ i có n-i phép so sánh -> có tổng cộng 1+2+...+n-1=n(n-1)/2  phép so sánh
 - Số bước hoán vị
@@ -52,19 +52,19 @@ void Sort_Interchange(int a[], int n)
   - Xấu nhất: n(n-1)/2(mảng sắp xếp ngược với yêu cầu)
 - Độ phức tạp(N^2)
 
-## Selection Sort - Sắp xếp chọn <a name="selection_sort"></a>
+## Selection Sort - Sắp xếp chọn
 
 - [Ý tưởng giải thuật](#selection_sort-ytuong)
 - [Cài đặt](#selection_sort-setup)
 - [Độ phức tạp thuật toán](#selection_sort-dpt)
 
-### Ý tưởng giải thuật <a name="selection_sort-ytuong"></a>
+### Ý tưởng giải thuật Selection Sort
 
 - Chọn phần tử nhó nhất trong N phần tự trong dãy ban đầu.
 - Đưa phần từ này về vị trí đầu dãy hiền hành
 - Xem dãy hiện hành chỉ còn N-1 phần tử và lặp lại các bước đến khi chỉ còn 1 phần tử.
 
-### Cài đặt <a name="selection_sort-setup"></a>
+### Cài đặt Selection Sort
 
 ``` C++
 void Sort_Selection(int a[], int n)
@@ -85,7 +85,7 @@ void Sort_Selection(int a[], int n)
 }
 ```
 
-### Độ phức tạp thuật toán <a name="selection_sort-dpt"></a>
+### Độ phức tạp thuật toán Selection Sort
 
 - Số bước so sánh: thuật toán gồm n-1 bước, ở bước thứ i có n-i phép so sánh -> có tổng cộng 1+2+...+n-1=n(n-1)/2  phép so sánh
 - Số bước hoán vị
@@ -93,18 +93,18 @@ void Sort_Selection(int a[], int n)
   - Xấu nhất: 3*n*(n-1)/2
 - Độ phức tạp: (N^2)
 
-## Bubble Sort - Sắp xếp nổi bọt <a name="bubble_sort"></a>
+## Bubble Sort - Sắp xếp nổi bọt
 
 - [Ý tưởng giải thuật](#bubble_sort-ytuong)
 - [Cài đặt](#bubble_sort-setup)
 - [Độ phức tạp thuật toán](#bubble_sort-dpt)
 
-### Ý tưởng giải thuật <a name="bubble_sort-ytuong"></a>
+### Ý tưởng giải thuật Bubble Sort
 
 - Xuất phát từ cuối dãy, đổi chỗ các cặp phần tử kế cận để đưa phần tử nhỏ hơn trong cặp phẩn tử đó về vị trí đứng đầu dãy hiện hành, sau đó sẽ không xét đến nó ở bước kế tiếp, do vậy ở lần xử lý thứu i sẽ có vị trí đầu dãy là i.
 - lặp lại xử lý trên đến khi không còn cặp phần từ nào để xét.
 
-### Cài đặt <a name="bubble_sort-setup"></a>
+### Cài đặt Bubble Sort
 
 ``` C++
 void Sort_Bubble(int a[], int n)
@@ -120,7 +120,7 @@ void Sort_Bubble(int a[], int n)
 }
 ```
 
-### Độ phức tạp thuật toán <a name="bubble_sort-dpt"></a>
+### Độ phức tạp thuật toán Bubble Sort
 
 - Số bước so sánh: thuật toán gồm n-1 bước, ở bước thứ i có n-i phép so sánh -> có tổng cộng 1+2+...+n-1=n(n-1)/2  phép so sánh
 - Số bước hoán vị
@@ -128,18 +128,18 @@ void Sort_Bubble(int a[], int n)
   - Xấu nhất: n(n-1)/2(mảng sắp xếp ngược với yêu cầu)
 - Độ phức tạp(N^2)
 
-## Insertion Sort - Sắp xếp chèn <a name="insertion_sort"></a>
+## Insertion Sort - Sắp xếp chèn
 
 - [Ý tưởng giải thuật](#insertion_sort-ytuong)
 - [Cài đặt](#insertion_sort-setup)
 - [Độ phức tạp thuật toán](#insertion_sort-dpt)
 
-### Ý tưởng giải thuật <a name="insertion_sort-ytuong"></a>
+### Ý tưởng giải thuật Insertion Sort
 
 - giả sử mảng đã có i phần tử đầu tiên **đã có thứ tự**
 - Tìm cách chèn phần tử thứ i vào vị trị thích hợp của đoạn đã được sắp trước đó, khiến mảng mới trở nên có thứ tự.
 
-### Cài đặt <a name="insertion_sort-setup"></a>
+### Cài đặt Insertion Sort
 
 ```C++
 void Sort_Insertion(int a[], int n)
@@ -162,7 +162,7 @@ void Sort_Insertion(int a[], int n)
 }
 ```
 
-### Độ phức tạp thuật toán <a name="insertion_sort-dpt"></a>
+### Độ phức tạp thuật toán Insertion Sort
 
 |Trường hợp|Số phép so sánh|Số phép gán|
 |---|---|---|
@@ -171,13 +171,13 @@ void Sort_Insertion(int a[], int n)
 
 - Độ phức tạp(N^2)
 
-## Shell Sort <a name="shell_sort"></a>
+## Shell Sort
 
 - [Ý tưởng giải thuật](#shell_sort-ytuong)
 - [Cài đặt](#shell_sort-setup)
 - [Độ phức tạp thuật toán](#shell_sort-dpt)
 
-### Ý tưởng giải thuật <a name="shell_sort-ytuong"></a>
+### Ý tưởng giải thuật Shell Sort
 
 - Cải tiến từ phướng pháp [Insertion Sort](#insertion_sort)
 - Phân hoạch dãy thành các dãy con ở cách nhau **h** vị trí
@@ -190,7 +190,7 @@ void Sort_Insertion(int a[], int n)
 - Sắp xếp các con theo phương pháp chèn trực tiếp
 - Dùng phương pháp [Insertion Sort](#insertion_sort) sắp xếp lại cả dãy
 
-### Cài đặt <a name="shell_sort-setup"></a>
+### Cài đặt Shell Sort
 
 ```C++
 void Sort_Shell(int a[], int n, int divideBy)
@@ -213,4 +213,4 @@ void Sort_Shell(int a[], int n, int divideBy)
 }
 ```
 
-### Độ phức tạp thuật toán <a name="shell_sort-dpt"></a>
+### Độ phức tạp thuật toán Shell Sort
