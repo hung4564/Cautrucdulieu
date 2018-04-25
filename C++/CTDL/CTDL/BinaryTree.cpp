@@ -21,7 +21,7 @@ void BinaryTree::Add(int value)
 	}
 	else
 	{
-		Node* p=root;
+		Node* p = root;
 		Node* q = p;
 		while (p != NULL)
 		{
@@ -122,9 +122,9 @@ void BinaryTree::Delete(int x)
 }
 
 Node * BinaryTree::Search(int value)
-{	
+{
 	Node* temp = root;
-	while (temp!=NULL)
+	while (temp != NULL)
 	{
 		if (temp->getData() < value)
 		{
@@ -146,14 +146,14 @@ void BinaryTree::Show()
 {
 	RTLtraverse(root);
 }
-void BinaryTree:: RTLtraverse(Node* node)
+void BinaryTree::RTLtraverse(Node* node)
 {
 	if (node == NULL)     //Cay rong
 		return;
 	else
 	{
 		RTLtraverse(node->getRight());    //Duyet cay con phai theo thu tu giua
-		cout<<node->getData()<<"; ";                //Tham nut
+		cout << node->getData() << "; ";                //Tham nut
 		RTLtraverse(node->getLeft());     //Duyet cay con trai theo thu tu giua
 	}
 }

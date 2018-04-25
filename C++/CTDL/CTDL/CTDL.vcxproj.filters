@@ -36,6 +36,12 @@
     <ClInclude Include="Stack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BinaryTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Array.cpp">
@@ -60,6 +66,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Stack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
