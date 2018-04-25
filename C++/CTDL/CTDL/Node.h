@@ -14,6 +14,10 @@ public:
 	Node* getPrevious();
 	void setNext(Node* next);
 	void setPrevious(Node* next);
+	Node* getRight();
+	Node* getLeft();
+	void setRight(Node* next);
+	void setLeft(Node* next);
 private:
 	int data;
 	Node *left;

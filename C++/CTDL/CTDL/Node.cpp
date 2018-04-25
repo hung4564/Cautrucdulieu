@@ -50,3 +50,22 @@ void Node::setPrevious(Node * next)
 	this->left = next;
 }
 
+
+Node * Node::getRight()
+{
+	return right;
+}
+Node * Node::getLeft()
+{
+	return left;
+}
+
+void Node::setRight(Node * next)
+{
+	this->right = next;
+}
+
+void Node::setLeft(Node * next)
+{
+	this->left = next;
+}
